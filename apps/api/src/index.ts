@@ -7,7 +7,7 @@ import upload from './routes/upload'
 const app = new Hono()
 
 app.use('*', cors({
-  origin: ['http://localhost:1420', 'tauri://localhost'],
+  origin: ['http://localhost:1420', 'tauri://localhost', 'https://tauri.localhost'],
 }))
 
 app.get('/', (c) => c.json({ status: 'MCloud API running' }))
