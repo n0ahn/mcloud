@@ -19,7 +19,7 @@ export async function playWorld(worldId: string, worldName: string, launcher: st
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return
 
-  const response = await fetch('http://localhost:3000/upload/download-url', {
+  const response = await fetch('https://mcloud-nk0a.onrender.com/upload/world', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ worldId, userId: user.id })

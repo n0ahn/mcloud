@@ -24,7 +24,7 @@ export async function uploadWorld(worldId: string, worldPath: string, userId: st
 
     console.log('Sending to API...')
 
-    const response = await fetch('http://localhost:3000/upload/world', {
+    const response = await fetch('https://mcloud-nk0a.onrender.com/upload/world', {
         method: 'POST',
         body: formData,
     })
