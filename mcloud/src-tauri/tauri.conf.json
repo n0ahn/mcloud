@@ -14,11 +14,12 @@
       {
         "title": "mcloud",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "devtools": true
       }
     ],
     "security": {
-      "csp": null
+      "csp": "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.supabase.co https://*.backblazeb2.com https://mcloud-nk0a.onrender.com; connect-src 'self' https://*.supabase.co https://*.backblazeb2.com https://mcloud-nk0a.onrender.com wss://*.supabase.co"
     }
   },
   "plugins": {
